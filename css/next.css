@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.vids{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(12,3,51,0.3)),(rgba(12,3,51,0.3));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back{
+    position: absolute;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: auto;
+    }
+}
+.greetings{
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 900;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #5d0379, 0 0 50px #7039d6, 0 0 100px #862ed8;
+    }
+    10%, 90%{
+        color: #ffffff;
+        text-shadow: 0 0 12px #0c87b8, 0 0 50px #207dd4, 0 0 100px #28b6da;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: .10s;
+}
+.greetings > span:nth-child(7){
+    animation-delay: .12s;
+}
+.greetings > span:nth-child(8){
+    animation-delay: .14s;
+}
+
+.description{
+    position: absolute;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 270px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 1000;
+    font-family: 'Poppins'sans-serif;
+    color: #880a73;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    
+    .button a{
+        font-size: .5rem;
+    }
+}
+
+.link{
+    text-decoration: none;
+}
